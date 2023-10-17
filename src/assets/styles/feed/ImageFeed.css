@@ -1,0 +1,68 @@
+/* Styles for .feed-container */
+.feed-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, 0.06);
+}
+
+/* Styles for .large-photo */
+.large-photo {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for .feed-title h2 */
+.feed-title h2 {
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: 700;
+    display: flex;
+    font-family: Rajdhani, sans-serif;
+    color: #3e3f5e;
+}
+
+/* Styles for .separator1 and .separator */
+.separator1,
+.separator {
+    height: 1px;
+    background-color: #f1f1f1;
+}
+
+.separator {
+    margin-top: 8px; /* Add some top margin to separate it visually from the content above */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styles for .action-bar */
+.action-bar {
+    justify-content: space-between;
+    display: flex;
+    padding: 8px 20px;
+}
+
+/* Styles for .action */
+.action {
+    display: flex;
+    align-items: center;
+    color: #33333326;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.action:hover {
+    color: #23d2e2; /* Change the color when the cursor hovers over the action */
+}
+
+/* Styles for .action i and .action-text */
+.action i {
+    margin-right: 4px;
+}
+
+.action-text {
+    margin-left: 4px; /* Add space between the icon and text */
+}

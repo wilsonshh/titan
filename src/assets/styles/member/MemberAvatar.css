@@ -1,0 +1,190 @@
+/* ImageStack.css */
+
+/* Default styles for larger screens */
+.image-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.image {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.image1 {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+}
+
+.image2 {
+    padding: 3px;
+    z-index: 2;
+    width: auto;
+    height: 45px;
+}
+
+.counter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 3;
+}
+
+/* Media query for screens with a maximum width of 480px (Mobile Portrait) */
+@media screen and (max-width: 480px) {
+    .image-container {
+        width: 30px;
+        height: 30px;
+    }
+
+    .image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .image1 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .image2 {
+        padding: 2px;
+        width: auto;
+        height: 45px;
+    }
+
+    .counter {
+        width: 14px;
+        height: 14px;
+    }
+
+    .counter-container{
+        width: 33px !important;
+        height: 36px !important;
+    }
+
+    .newsfeed-name-inner-container{
+        margin-left: 1.5rem !important;
+    }
+}
+
+/* Media query for screens with a minimum width of 481px and maximum width of 768px (Mobile Landscape / Tablet Portrait) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .image-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    .image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .image1 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .image2 {
+        padding: 3px;
+        width: auto;
+        height: 45px;
+    }
+
+    .counter {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px and maximum width of 1024px (Tablet Landscape / Small Desktop) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .image-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .image1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .image2 {
+        padding: 4px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .counter {
+        width: auto;
+        height: 45px;
+    }
+}
+
+/* Media query for screens with a minimum width of 1025px (Large Desktop) */
+@media screen and (min-width: 1025px) {
+    .image-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .image1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .image2 {
+        padding: 5px;
+        width: auto;
+        height: 45px;
+    }
+
+    .counter {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* Media query for screens with landscape orientation */
+@media screen and (orientation: landscape) {
+    .image-container {
+        width: 45px;
+        height: 45px;
+    }
+
+    .image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .image1 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .image2 {
+        padding: 4px;
+        width: auto;
+        height: 45px;
+    }
+
+    .counter {
+        width: 20px;
+        height: 20px;
+    }
+}

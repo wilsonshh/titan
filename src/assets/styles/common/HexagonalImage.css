@@ -1,0 +1,20 @@
+.hexagonal-image-container {
+    width: 36px; /* Set your desired width */
+    height: 36px; /* Set your desired height */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 2px 6px 4px;
+}
+
+.hexagonal-image {
+    width: 36px;
+    height: 36px;
+    margin: 1px;
+    clip-path: polygon(
+            48% 1%, /* Top center */ 102% 24%, /* Top right */ 101% 74%, /* Right center */ 50% 97%, /* Bottom right */ 0% 75%, /* Left center */ 0% 25% /* Top left */
+    );
+    object-fit: cover; /* To maintain image aspect ratio and cover the hexagonal shape */
+}

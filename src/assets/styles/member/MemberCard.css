@@ -1,0 +1,120 @@
+/* MemberCard.scss */
+
+/* Parent container for the entire member card */
+.member-name-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin: 30px 0;
+
+/* Child container for name and verified icon */
+.member-name-inner-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 10px;
+
+/* Adds space around the content */
+
+/* Child container for name and verified icon */
+.member-name-icon {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start;
+
+/* Align content to the left */
+
+/* Verified icon */
+.icon-verified {
+    height: 12px;
+    width: 12px;
+    align-self: center; /* Vertically center the icon */
+    margin-left: 5px; /* Add space between icon and name */
+}
+
+}
+}
+
+/* Member's name */
+.text-name {
+    color: #3e3f5e;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Rajdhani, sans-serif;
+}
+
+/* Member's username */
+.text-shortname {
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 12px;
+    font-family: Rajdhani, sans-serif;
+    color: #3e3f5e;
+}
+
+}
+
+
+/* Media query for screens with a maximum width of 768px (Mobile Portrait) */
+@media screen and (max-width: 768px) {
+    .member-name-container {
+        margin: 20px 0;
+        align-items: center; /* Center align items vertically */
+    }
+
+    .text-name {
+        font-size: 12px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+        font-weight: 700;
+    }
+
+    .text-shortname {
+        font-size: 11px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (Tablet Portrait) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .member-name-container {
+        margin: 25px 0;
+        align-items: center; /* Center align items vertically */
+
+    }
+
+    .text-name {
+        font-size: 14px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+        font-weight: 700;
+    }
+
+    .text-shortname {
+        font-size: 13px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}
+
+/* Media query for screens with a minimum width of 1025px (Desktop) */
+@media screen and (min-width: 1025px) {
+    .member-name-container {
+        margin: 30px 0;
+        align-items: center; /* Center align items vertically */
+    }
+
+    .text-name {
+        font-size: 16px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+        font-weight: 700;
+    }
+
+    .text-shortname {
+        font-size: 14px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}

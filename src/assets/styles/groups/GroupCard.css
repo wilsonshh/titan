@@ -1,0 +1,106 @@
+/* MemberCard.scss */
+
+/* Parent container for the entire member card */
+.group-name-container {
+    display: flex;
+    margin: 20px 0;
+
+/* Child container for name and verified icon */
+.group-name-inner-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 5px;
+
+/* Adds space around the content */
+
+/* Child container for name and verified icon */
+.group-name-icon {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Align content to the left */
+}
+
+}
+
+/* Member's name */
+.text-name {
+    color: #3e3f5e;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Rajdhani, sans-serif;
+}
+
+/* Member's username */
+.text-member {
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 12px;
+    font-family: Rajdhani, sans-serif;
+    color: #3e3f5e;
+}
+
+.group-avatar {
+    flex: 0 0 auto; /* The avatar takes a fixed width, not flexible */
+}
+
+.group-icon {
+    color: #cbccd7;
+    height: 18px;
+    width: 18px;
+}
+
+}
+
+
+/* Media query for screens with a maximum width of 768px (Mobile Portrait) */
+@media screen and (max-width: 768px) {
+    .group-name-container {
+        margin: 20px 0;
+    }
+
+    .text-name {
+        font-size: 12px;
+    }
+
+    .text-member {
+        font-size: 11px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (Tablet Portrait) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .group-name-container {
+        margin: 20px 0;
+    }
+
+    .text-name {
+        font-size: 14px;
+    }
+
+    .text-member {
+        font-size: 13px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}
+
+/* Media query for screens with a minimum width of 1025px (Desktop) */
+@media screen and (min-width: 1025px) {
+    .group-name-container {
+        margin: 20px 0;
+    }
+
+    .text-name {
+        font-size: 16px;
+    }
+
+    .text-member {
+        font-size: 14px;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}

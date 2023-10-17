@@ -1,0 +1,136 @@
+/* Parent container for the entire newsfeed card */
+.newsfeed-name-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 20px 10px; /* Align items at the top */
+}
+
+/* Child container for name and verified icon */
+.newsfeed-name-inner-container {
+    display: flex;
+    width: 26vw;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 15px; /* Align content to the left */
+}
+
+/* Child container for name and verified icon */
+.newsfeed-name-icon {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Align content to the left */
+}
+
+/* Verified icon */
+.icon-verified {
+    height: 15px;
+    width: 15px;
+    align-self: center; /* Vertically center the icon */
+    margin-left: 5px; /* Add space between icon and name */
+}
+
+.container-user-type {
+    background-color: #594fdd; /* Your background color */
+    border-radius: 10px;
+    padding: 0 5px;
+    margin: 0 5px; /* This creates a round shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 12px; /* Text color inside the div */
+    font-family: Rajdhani, sans-serif;
+}
+
+.text-posted {
+    padding: 0 0;
+    margin: 1px 0; /* This creates a round shape */
+    display: flex;
+    font-weight: 500;
+    font-family: Rajdhani, sans-serif;
+}
+
+/* newsfeed's name */
+.text-name {
+    font-size: .95rem;
+    font-weight: 700;
+    font-family: Rajdhani, sans-serif;
+    color: #3e3f5e;
+}
+
+/* newsfeed's username */
+.text-shortname {
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(145, 144, 144);
+    text-align: left;
+    font-size: 12px;
+}
+
+/* Media query for screens with a maximum width of 768px (Mobile Portrait) */
+@media screen and (max-width: 768px) {
+    .newsfeed-name-container {
+        margin: 20px 0;
+    }
+
+    .text-name {
+        font-size: 12px;
+        font-family: Rajdhani, sans-serif;
+    }
+
+    .text-shortname {
+        font-size: 11px;
+    }
+
+    .newsfeed-name-icon {
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (Tablet Portrait) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .newsfeed-name-container {
+        margin: 0 0;
+    }
+
+    .text-name {
+        font-size: .95rem;
+        font-weight: 700;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+
+    .text-shortname {
+        font-size: 13px;
+    }
+
+    .newsfeed-name-icon {
+        width: 60vw;
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        justify-content: flex-start;
+    }
+}
+
+/* Media query for screens with a minimum width of 1025px (Desktop) */
+@media screen and (min-width: 1025px) {
+    .newsfeed-name-container {
+        margin: 0 0;
+    }
+
+    .text-name {
+        font-size: .95rem;
+        font-weight: 700;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+
+    .text-shortname {
+        font-size: 14px;
+    }
+}

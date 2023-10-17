@@ -1,0 +1,96 @@
+.feed-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 20px;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, .06);
+}
+
+.large-photo {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.feed-title h2 {
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: 700;
+    display: flex;
+}
+
+.feed2-description {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: .875rem; /* Adjust the font size as needed */
+    display: flex;
+    margin: 20px 0; /* This creates a round shape */
+    font-weight: 500;
+    color: #3e3f5e;
+    font-family: Rajdhani, sans-serif;
+}
+
+.separator1 {
+    height: 1px;
+    background-color: #f1f1f1;
+    margin: 8px 0;
+}
+
+.separator {
+    height: 1px;
+    background-color: #f1f1f1;
+    margin-left: 20px;
+    margin-right: 20px; /* Add some top margin to separate it visually from the content above */
+}
+
+/* Add this CSS to your "NewsFeed.css" file */
+.action-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    color: #b0b0b0a0;
+}
+
+.action:hover {
+    color: #23d2e2; /* Change the color when the cursor hovers over the action */
+}
+
+.action i {
+    margin-right: 4px;
+}
+
+.action-text {
+    margin-left: 4px;
+    font-size: .75rem;
+    font-weight: 700;
+    font-family: Rajdhani, sans-serif;
+    color: #3e3f5e; /* Add space between the icon and text */
+}
+
+.action-text:hover {
+    margin-left: 4px;
+    font-size: .75rem;
+    font-weight: 700;
+    font-family: Rajdhani, sans-serif;
+    color: #23d2e2; /* Change the color when the cursor hovers over the action */
+}
+
+.highlight-link {
+    color: #23d2e2; /* Example: Change text color to blue for links */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px; /* Adjust the font size as needed */
+    display: flex;
+    margin: 20px 0; /* This creates a round shape */
+    font-weight: 500;
+    font-family: Rajdhani, sans-serif; /* Example: Add underline to links */
+}

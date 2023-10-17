@@ -1,0 +1,53 @@
+
+.main-container {
+    padding: 0
+}
+
+.tab-outer {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    padding-left: 20px;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, .06);
+}
+
+.inner-tab {
+    padding: 32px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-size: .875rem;
+    font-weight: 700;
+    color: #333;
+    box-shadow: none;
+    cursor: pointer;
+    appearance: none;
+    font-family: Rajdhani, sans-serif
+
+}
+
+@media (min-width: 320px) {
+    .social-tabs {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .social-dropdown {
+        display: block;
+        margin-right: 20px;
+    }
+
+}
+
+@media (min-width: 426px) {
+    .social-tabs {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .social-dropdown {
+        display: block;
+    }
+}

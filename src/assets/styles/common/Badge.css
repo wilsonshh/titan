@@ -1,0 +1,96 @@
+/* Parent container for the entire member card */
+.badge-name-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin: 10px 5px;
+}
+
+/* Child container for name and verified icon */
+.badge-name-inner-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 10px; /* Adds space around the content */
+}
+
+/* Child container for name and verified icon */
+.badge-name-icon {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: flex-start; /* Align content to the left */
+}
+
+/* Member's name */
+.text-name {
+    color: #3e3f5e;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Rajdhani, sans-serif;
+}
+
+/* Member's username */
+.text-member {
+    font-weight: 500;
+    color: #4a4b4b;
+    text-align: left;
+}
+
+/* Media query for screens with a maximum width of 768px (Mobile Portrait) */
+@media screen and (max-width: 768px) {
+    .badge-name-container {
+        margin: 10px 5px;
+    }
+
+    .text-name {
+        font-size: 12px;
+        font-family: Rajdhani, sans-serif;
+        font-weight: 700;
+    }
+
+    .text-member {
+        font-size: 0.75rem;
+        font-weight: 500;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}
+
+/* Media query for screens with a minimum width of 769px (Tablet Portrait) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .badge-name-container {
+        margin: 10px 5px;
+    }
+
+    .text-name {
+        font-size: 14px;
+        font-family: Rajdhani, sans-serif;
+        font-weight: 700;
+    }
+
+    .text-member {
+        font-size: 0.75rem;
+        font-weight: 500;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}
+
+/* Media query for screens with a minimum width of 1025px (Desktop) */
+@media screen and (min-width: 1025px) {
+    .badge-name-container {
+        margin: 10px 5px;
+    }
+
+    .text-name {
+        font-size: 16px;
+        font-family: Rajdhani, sans-serif;
+        font-weight: 700;
+    }
+
+    .text-member {
+        font-size: 0.75rem;
+        font-weight: 500;
+        font-family: Rajdhani, sans-serif;
+        color: #3e3f5e;
+    }
+}
